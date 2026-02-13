@@ -1,15 +1,18 @@
 
 import random
+vvvvv=random.randint(1,10)
 print("You got it!")
 ask=int(input("What is your number"))
-vvvvv=int(random.randint(1,1000))
 while ask!=vvvvv:
-       ask=int(input("Try again"))
+       if ask<vvvvv:
+              ask=int(input("try again HIGHER"))
+       if ask>vvvvv:
+              ask=int(input("try again LOWER"))
+
+print("You got it")
+       
 
 
-print("You got it!")
-
-        
                 
         
 
