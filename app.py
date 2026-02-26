@@ -1,6 +1,6 @@
 
 import random
-vvvvv=random.randint(1,1000)
+vvvvv=random.randint(1,10)
 ask=int(input("What is your number"))
 guesshistory=[]
 while ask!=vvvvv:
