@@ -1,8 +1,9 @@
 
 import random
 vvvvv=random.randint(1,10)
-ask=int(input("What is your number"))
 guesshistory=[]
+ask=int(input("What is your number"))
+guesshistory.append(ask)
 while ask!=vvvvv:
        print(guesshistory)
        if ask<vvvvv:
@@ -11,7 +12,8 @@ while ask!=vvvvv:
        if ask>vvvvv:
               ask=int(input("try again LOWER"))
               guesshistory.append(ask)
-print(f"You got it! Your previous guesses:{guesshistory}")
+for i in guesshistory:
+       print(f"You got it! Your previous guesses:{guesshistory}")
 
 
 
