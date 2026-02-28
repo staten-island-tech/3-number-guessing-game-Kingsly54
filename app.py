@@ -14,7 +14,7 @@ while ask!=vvvvv:
               ask=int(input("try again LOWER"))
               guesshistory.append(ask)
 print("You got it! Your previous guesses:")
-for i in guesshistory:
+for i in range(1):
        print(guesshistory)
 
 
